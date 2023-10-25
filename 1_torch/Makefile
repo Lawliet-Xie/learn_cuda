@@ -6,7 +6,7 @@ build: configure
 
 .PHONY: configure
 configure:
-	cmake -B $(project) build -DCMAKE_PREFIX_PATH=/content/libtorch
+	cmake $(project) - B build -DCMAKE_PREFIX_PATH=/content/libtorch
 
 .PHONY: run
 run:
